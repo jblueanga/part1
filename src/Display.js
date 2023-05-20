@@ -1,6 +1,11 @@
-const Display = ({counter}) => {
+const Display = ({good}) => {
+    if (good === 0) {
+        return (
+            <div>no reviews yet</div>
+        )
+    }
     return (
-      <div>{counter}</div>
+      <div>{good}</div>
     )
   }
 
