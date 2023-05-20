@@ -1,21 +1,17 @@
 
-const Stats = ({good, bad, neutral, total}) => {
-    // if () {
-    //   return (
-    //     <div>
-    //       the app is used by pressing the buttons
-    //     </div>
-    //   )
-    // }
+const Stats = ({text, review}) => {
+    
     return (
       <div>
-      <h1>Statistics</h1>
-  
-        <p>good:{good}</p>
-        <p>bad:{bad}</p>
-        <p>neutral:{neutral}</p>
-        <p>total:{total}</p>
-  
+      <table>
+        <tbody>
+        <tr>
+          <td>{text} {review}</td>
+          </tr>
+          </tbody>
+        
+      </table>
+      
       </div>
     )
   }
